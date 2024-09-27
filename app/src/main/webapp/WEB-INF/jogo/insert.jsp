@@ -27,7 +27,7 @@
                 <label for="plataforma">Plataforma(s):</label>
                 <c:forEach var="p" items="${plataformas}">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="plataformas[]" value="${p.id}" id="${p.id}" />
+                        <input type="checkbox" class="custom-control-input" name="plataformas" value="${p.id}" id="${p.id}" />
                         <label class="custom-control-label" for="${p.id}">${p.nome}</label>
                     </div>
                 </c:forEach>
@@ -37,6 +37,5 @@
             <button type="submit" class="btn btn-success">Salvar</button>
         </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
